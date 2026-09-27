@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michi 🐾</title>
+    <!-- Fuente de Google Fonts para un estilo moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #fce4ec 0%, #e8f5e9 100%);
+            color: #4a4a4a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            text-align: center;
+            padding: 40px 30px;
+            position: relative;
+        }
+
+        .avatar-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px auto;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #f8bbd0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #333333;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #888888;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .bio {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #666666;
+            margin-bottom: 30px;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid #f8bbd0;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px 20px;
+            background: #f8bbd0;
+            color: #5c3a42;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(248, 187, 208, 0.4);
+        }
+
+        .btn:hover {
+            background: #f48fb1;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(244, 143, 177, 0.5);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #b0b0b0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Imagen de perfil (podés cambiar la URL por la foto real de la Michi) -->
+        <div class="avatar-container">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=300&q=80" alt="Michi" class="avatar">
+        </div>
+
+        <h1>Michi 🐾</h1>
+        <div class="subtitle">La reina del hogar</div>
+
+        <div class="bio">
+            ¡Hola! Bienvenidos al rincón digital de Michi. Aquí comparto mis siestas favoritas, mis momentos de travesuras y todo el amor que reparto todos los días. 🧶✨
+        </div>
+
+        <div class="links">
+            <a href="#" class="btn" onclick="saludar()">💖 Darle mimos a Michi</a>
+            <a href="#" class="btn" style="background: #c8e6c9; color: #2e5d32;" onclick="verSnacks()">🐟 Snack Favorito</a>
+        </div>
+
+        <div class="footer">
+            Hecho con mucho amor digital 💻✨
+        </div>
+    </div>
+
+    <script>
+        function saludar() {
+            alert("¡Michi ronronea feliz y te manda un gran abrazo gatuno! 🐾❤️");
+        }
+
+        function verSnacks() {
+            alert("Los favoritos de Michi: ¡Pescado fresco y sobres de pollo! 🐟🍗");
+        }
+    </script>
+
+</body>
+</html>
